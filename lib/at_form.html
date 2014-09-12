@@ -1,0 +1,53 @@
+<template name="atForm">
+  {{#unless hide}}
+    {{#SequentialLayout size=[undefined, true]}}
+      <div class="at-form">
+        {{#View size="[undefined, auto]"}}
+          {{#if showTitle}}
+            {{>Surface template="atTitle"}}
+          {{/if}}
+        {{/View}}
+        {{#View size="[undefined, auto]"}}
+          {{#if showSignInLink}}
+            {{>Surface template="atSigninLink"}}
+          {{/if}}
+        {{/View}}
+        {{#View size="[undefined, auto]"}}
+          {{#if showOauthServices}}
+            {{>Surface template="atOauth"}}
+          {{/if}}
+        {{/View}}
+        {{#View size="[undefined, auto]"}}
+          {{#if showServicesSeparator}}
+            {{>Surface template="atSep"}}
+          {{/if}}
+        {{/View}}
+        {{#View size="[undefined, auto]"}}
+          {{#if showError}}
+            {{>Surface template="atError"}}
+          {{/if}}
+        {{/View}}
+        {{#View size="[undefined, auto]"}}
+          {{#if showResult}}
+            {{>Surface template="atResult"}}
+          {{/if}}
+        {{/View}}
+        {{#View size="[undefined, auto]"}}
+          {{#if showPwdForm}}
+            {{>Surface template="atPwdForm"}}
+          {{/if}}
+        {{/View}}
+        {{#View size="[undefined, auto]"}}
+          {{#if showSignUpLink}}
+            {{>Surface template="atSignupLink"}}
+          {{/if}}
+        {{/View}}
+        {{#View size="[undefined, auto]"}}
+          {{#if showTermsLink}}
+            {{>Surface template="atTermsLink"}}
+          {{/if}}
+        {{/View}}
+      </div>
+    {{/SequentialLayout}}
+  {{/unless}}
+</template>
