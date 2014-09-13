@@ -2,15 +2,15 @@
   "dependencies": [
     [
       "accounts-base",
-      "1.0.0"
+      "1.0.1"
     ],
     [
-      "accounts-password",
-      "1.0.0"
+      "aldeed:template-extension",
+      "2.0.0"
     ],
     [
       "application-configuration",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "binary-heap",
@@ -18,7 +18,7 @@
     ],
     [
       "blaze",
-      "1.0.3"
+      "2.0.0"
     ],
     [
       "blaze-tools",
@@ -37,27 +37,27 @@
       "1.0.2"
     ],
     [
+      "ddp",
+      "1.0.8"
+    ],
+    [
       "deps",
-      "1.0.1"
+      "1.0.3"
     ],
     [
       "ejson",
-      "1.0.0"
-    ],
-    [
-      "email",
-      "1.0.2"
+      "1.0.1"
     ],
     [
       "follower-livedata",
-      "1.0.0"
+      "1.0.1"
+    ],
+    [
+      "gadicohen:famous-views",
+      "0.1.6"
     ],
     [
       "geojson-utils",
-      "1.0.0"
-    ],
-    [
-      "handlebars",
       "1.0.0"
     ],
     [
@@ -74,19 +74,23 @@
     ],
     [
       "iron:core",
-      "0.3.2"
+      "0.3.4"
     ],
     [
       "iron:dynamic-template",
-      "0.3.0"
+      "0.4.1"
     ],
     [
       "iron:layout",
-      "0.3.0"
+      "0.4.1"
     ],
     [
       "iron:router",
-      "0.9.1"
+      "0.9.3"
+    ],
+    [
+      "jag:pince",
+      "0.0.5"
     ],
     [
       "jquery",
@@ -95,14 +99,6 @@
     [
       "json",
       "1.0.0"
-    ],
-    [
-      "less",
-      "1.0.6"
-    ],
-    [
-      "livedata",
-      "1.0.7"
     ],
     [
       "localstorage",
@@ -114,7 +110,7 @@
     ],
     [
       "meteor",
-      "1.0.2"
+      "1.0.3"
     ],
     [
       "minifiers",
@@ -122,23 +118,15 @@
     ],
     [
       "minimongo",
-      "1.0.1"
+      "1.0.2"
     ],
     [
-      "mongo-livedata",
-      "1.0.3"
-    ],
-    [
-      "mrt:accounts-t9n",
-      "0.0.13"
-    ],
-    [
-      "npm-bcrypt",
-      "0.7.7"
+      "mongo",
+      "1.0.4"
     ],
     [
       "observe-sequence",
-      "1.0.1"
+      "1.0.2"
     ],
     [
       "ordered-dict",
@@ -150,7 +138,11 @@
     ],
     [
       "reactive-dict",
-      "1.0.0"
+      "1.0.2"
+    ],
+    [
+      "reactive-var",
+      "1.0.1"
     ],
     [
       "retry",
@@ -162,35 +154,39 @@
     ],
     [
       "service-configuration",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "sha",
       "1.0.0"
     ],
     [
-      "spacebars",
-      "1.0.0"
+      "softwarerero:accounts-t9n",
+      "0.0.19"
     ],
     [
-      "spacebars-compiler",
+      "spacebars",
       "1.0.1"
     ],
     [
-      "splendido:accounts-templates-core",
-      "0.0.22"
+      "spacebars-compiler",
+      "1.0.2"
     ],
     [
-      "srp",
+      "splendido:accounts-templates-core",
       "1.0.0"
     ],
     [
       "templating",
-      "1.0.4"
+      "1.0.5"
+    ],
+    [
+      "tracker",
+      "1.0.2"
     ],
     [
       "ui",
-      "1.0.0"
+      "1.0.2"
     ],
     [
       "underscore",
@@ -198,10 +194,10 @@
     ],
     [
       "webapp",
-      "1.0.2"
+      "1.0.3"
     ]
   ],
   "pluginDependencies": [],
-  "toolVersion": "meteor-tool@1.0.26",
+  "toolVersion": "meteor-tool@1.0.28",
   "format": "1.0"
 }
