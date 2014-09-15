@@ -17,15 +17,17 @@
     </form>
   </div>
   -->
-  {{#SequentialLayout size="[undefined, true]" class="at-pwd-form" fields=fields}}
-    {{#famousEach fields}}
-      {{>Surface template="atInput" size="[undefined, auto]"}}
-    {{/famousEach}}
-    {{#View size="[undefined, true]"}}
-      {{#if showForgotPasswordLink}}
-        {{>Surface template="atPwdLink" size="[undefined, auto]"}}
-      {{/if}}
-    {{/View}}  
-    {{> Surface template="atPwdFormBtn" size="[undefined, auto]"}}
-  {{/SequentialLayout}}
+  {{#Surface size=formSize class="at-pwd-form"}}
+    {{#SequentialLayout size="[undefined, undefined]" fields=fields}}
+      {{#famousEach fields}}
+        {{>Surface template="atInput" size="[undefined, auto]"}}
+      {{/famousEach}}
+      {{#View size=linkSize}}
+        {{#if showForgotPasswordLink}}
+          {{>Surface template="atPwdLink" size="[undefined, true]"}}
+        {{/if}}
+      {{/View}}  
+      {{> Surface template="atPwdFormBtn" size="[undefined, auto]"}}
+    {{/SequentialLayout}}
+  {{/Surface}}
 </template>

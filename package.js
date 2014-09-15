@@ -11,6 +11,7 @@ Package.on_use(function(api, where) {
         'templating',
         'gadicohen:famous-views',
         'aldeed:template-extension',
+        'splendido:accounts-templates-core@1.0.0',
     ], 'client');
     api.imply([
         'splendido:accounts-templates-core@1.0.0',
@@ -18,7 +19,7 @@ Package.on_use(function(api, where) {
         'aldeed:template-extension@2.0.0',
     ], ['client', 'server']);
 
-    //api.use('splendido:accounts-templates-bootstrap@1.0.0', ['client', 'server'] /*, { weak: true } */);
+    api.use('splendido:accounts-templates-bootstrap@1.0.0', ['client', 'server'], { weak: true });
     //api.use('splendido:accounts-templates-foundation@1.0.0', ['client', 'server'] /*, { weak: true } */);
     //api.use('splendido:accounts-templates-semantic-ui@1.0.0', ['client', 'server'] /*, { weak: true } */);
 
