@@ -1,12 +1,12 @@
 <template name="atFamousPwdForm">
+  <!--  
+  {{>Surface template="atPwdForm" size="[undefined, true]"}}
   <div class="at-pwd-form">
     <form role="form" id="at-pwd-form" novalidate>
       <fieldset {{disabled}}>
-        <!--  
         {{#famousEach fields}}
           {{>Surface template="atInput" size="[400, 20]"}}
         {{/famousEach}}
-        -->
         {{#View size="[undefined, 20]"}}
           {{#if showForgotPasswordLink}}
             {{>Surface template="atPwdLink" size="[400, 30]"}}
@@ -16,4 +16,16 @@
       </fieldset>
     </form>
   </div>
+  -->
+  {{#SequentialLayout size="[undefined, true]" class="at-pwd-form" fields=fields}}
+    {{#famousEach fields}}
+      {{>Surface template="atInput" size="[undefined, auto]"}}
+    {{/famousEach}}
+    {{#View size="[undefined, true]"}}
+      {{#if showForgotPasswordLink}}
+        {{>Surface template="atPwdLink" size="[undefined, auto]"}}
+      {{/if}}
+    {{/View}}  
+    {{> Surface template="atPwdFormBtn" size="[undefined, auto]"}}
+  {{/SequentialLayout}}
 </template>

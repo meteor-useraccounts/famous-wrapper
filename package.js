@@ -7,6 +7,7 @@ Package.describe({
 
 Package.on_use(function(api, where) {
     api.use([
+        'reactive-dict',
         'templating',
         'gadicohen:famous-views',
         'aldeed:template-extension',
