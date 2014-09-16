@@ -1,33 +1,15 @@
 <template name="atFamousPwdForm">
-  <!--  
-  {{>Surface template="atPwdForm" size="[undefined, true]"}}
-  <div class="at-pwd-form">
-    <form role="form" id="at-pwd-form" novalidate>
-      <fieldset {{disabled}}>
-        {{#famousEach fields}}
-          {{>Surface template="atInput" size="[400, 20]"}}
-        {{/famousEach}}
-        {{#View size="[undefined, 20]"}}
-          {{#if showForgotPasswordLink}}
-            {{>Surface template="atPwdLink" size="[400, 30]"}}
-          {{/if}}
-        {{/View}}
-        {{> Surface template="atPwdFormBtn" size="[400, 60]"}}
-      </fieldset>
-    </form>
-  </div>
-  -->
-  {{#Surface size=formSize class="at-pwd-form"}}
-    {{#SequentialLayout size="[undefined, undefined]" fields=fields}}
+  {{#ContainerSurface size=formSize class="at-pwd-form"}}
+    {{#SequentialLayout size=formSize fields=fields}}
       {{#famousEach fields}}
         {{>Surface template="atInput" size="[undefined, auto]"}}
       {{/famousEach}}
       {{#View size=linkSize}}
         {{#if showForgotPasswordLink}}
-          {{>Surface template="atPwdLink" size="[undefined, true]"}}
+          {{>Surface template="atPwdLink" size="[undefined, auto]"}}
         {{/if}}
-      {{/View}}  
+      {{/View}}
       {{> Surface template="atPwdFormBtn" size="[undefined, auto]"}}
     {{/SequentialLayout}}
-  {{/Surface}}
+  {{/ContainerSurface}}
 </template>
