@@ -1,6 +1,6 @@
 <template name="atFamousForm">
   {{#unless hide}}
-    {{#ContainerSurface size="[undefined, undefined]"}}
+    {{#ContainerSurface size="[undefined, undefined]" class="at-form"}}
       {{#SequentialLayout size=formSize}}
         {{#View size=titleSize}}
           {{#if showTitle}}
@@ -34,7 +34,7 @@
         {{/View}}
         {{#View size=pwdFormSize}}
           {{#if showPwdForm}}
-            {{> atPwdForm}}
+            {{>Surface template="atPwdForm" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
         {{#View size=signUpLinkSize}}

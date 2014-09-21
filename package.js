@@ -35,8 +35,6 @@ Package.on_use(function(api, where) {
         'lib/at_famous_form.js',
         'lib/at_famous_oauth.html',
         'lib/at_famous_oauth.js',
-        'lib/at_famous_pwd_form.html',
-        'lib/at_famous_pwd_form.js',
         'lib/full_page_at_famous_form.html',
         'lib/full_page_at_famous_form.js',
     ], ['client']);
