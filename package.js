@@ -1,21 +1,27 @@
 Package.describe({
     summary: "Accounts Templates styled for Famo.us.",
-    version: "0.9.0",
+    version: "0.9.2",
     name: "splendido:accounts-templates-famous",
     git: "https://github.com/splendido/accounts-templates-famous.git",
 });
 
 Package.on_use(function(api, where) {
+    api.versionsFrom("METEOR@0.9.2.2");
+
     api.use([
         'reactive-dict',
         'templating',
-        'gadicohen:famous-views',
-        'aldeed:template-extension',
-        'splendido:accounts-templates-core@0.9.0',
     ], 'client');
+
+    api.use([
+        "splendido:accounts-templates-core",
+        "gadicohen:famous-views",
+        "aldeed:template-extension"
+    ], ["client", "server"]);
+
     api.imply([
-        'splendido:accounts-templates-core@0.9.0',
-        'gadicohen:famous-views@0.1.6',
+        'splendido:accounts-templates-core@0.9.2',
+        'gadicohen:famous-views@0.1.7',
         'aldeed:template-extension@2.0.0',
     ], ['client', 'server']);
 
@@ -30,13 +36,15 @@ Package.on_use(function(api, where) {
         'lib/at_famous_oauth.js',
         'lib/at_famous_pwd_form.html',
         'lib/at_famous_pwd_form.js',
+        'lib/full_page_at_famous_form.html',
+        'lib/full_page_at_famous_form.js',
     ], ['client']);
 });
 
 Package.on_test(function(api) {
     api.use([
-        'splendido:accounts-templates-core@0.9.0',
+        'splendido:accounts-templates-core@0.9.2',
     ]);
     api.use(['tinytest', 'test-helpers'], ['client', 'server']);
-    api.add_files('tests/accounts-templates-bootstrap_tests.js', ['client', 'server']);
+    api.add_files('tests/tests.js', ['client', 'server']);
 });
