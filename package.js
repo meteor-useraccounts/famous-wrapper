@@ -14,6 +14,7 @@ Package.on_use(function(api, where) {
     ], 'client');
 
     api.use([
+        "underscore",
         "splendido:accounts-templates-core",
         "gadicohen:famous-views",
         "aldeed:template-extension"
@@ -37,6 +38,7 @@ Package.on_use(function(api, where) {
         'lib/at_famous_oauth.js',
         'lib/full_page_at_famous_form.html',
         'lib/full_page_at_famous_form.js',
+        'lib/init.js',
     ], ['client']);
 });
 

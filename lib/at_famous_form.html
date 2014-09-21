@@ -2,47 +2,47 @@
   {{#unless hide}}
     {{#ContainerSurface size="[undefined, undefined]" class="at-form"}}
       {{#SequentialLayout size=formSize}}
-        {{#View size=titleSize}}
+        {{#View size=atTitleSize}}
           {{#if showTitle}}
             {{>Surface template="atTitle" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
-        {{#View size=signInLinkSize}}
+        {{#View size=atSigninLinkSize}}
           {{#if showSignInLink}}
             {{>Surface template="atSigninLink" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
-        {{#View size=oauthSize}}
+        {{#View size=atOauthSize}}
           {{#if showOauthServices}}
             {{> atOauth}}
           {{/if}}
         {{/View}}
-        {{#View size=sepSize}}
+        {{#View size=atSepSize}}
           {{#if showServicesSeparator}}
             {{>Surface template="atSep" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
-        {{#View size=errorSize}}
+        {{#View size=atErrorSize}}
           {{#if showError}}
             {{>Surface template="atError" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
-        {{#View size=resultSize}}
+        {{#View size=atResultSize}}
           {{#if showResult}}
             {{>Surface template="atResult" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
-        {{#View size=pwdFormSize}}
+        {{#View size=atPwdFormSize}}
           {{#if showPwdForm}}
             {{>Surface template="atPwdForm" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
-        {{#View size=signUpLinkSize}}
+        {{#View size=atSignupLinkSize}}
           {{#if showSignUpLink}}
             {{>Surface template="atSignupLink" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
-        {{#View size=termsLinkSize}}
+        {{#View size=atTermsLinkSize}}
           {{#if showTermsLink}}
             {{>Surface template="atTermsLink" size="[undefined, true]"}}
           {{/if}}
