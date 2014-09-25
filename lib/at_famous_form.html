@@ -7,11 +7,6 @@
             {{>Surface template="atTitle" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
-        {{#View size=atSigninLinkSize}}
-          {{#if showSignInLink}}
-            {{>Surface template="atSigninLink" size="[undefined, true]"}}
-          {{/if}}
-        {{/View}}
         {{#View size=atOauthSize}}
           {{#if showOauthServices}}
             {{> atOauth}}
@@ -35,6 +30,11 @@
         {{#View size=atPwdFormSize}}
           {{#if showPwdForm}}
             {{>Surface template="atPwdForm" size="[undefined, true]"}}
+          {{/if}}
+        {{/View}}
+        {{#View size=atSigninLinkSize}}
+          {{#if showSignInLink}}
+            {{>Surface template="atSigninLink" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
         {{#View size=atSignupLinkSize}}
