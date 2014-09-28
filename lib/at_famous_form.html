@@ -29,7 +29,12 @@
         {{/View}}
         {{#View size=atPwdFormSize}}
           {{#if showPwdForm}}
-            {{>Surface template="atPwdForm" size="[undefined, true]"}}
+            {{!-- {{>Surface template="atPwdForm" size="[undefined, true]"}} --}}
+            {{#Surface size="[undefined, true]"}}
+              <div>
+                {{> atPwdForm}}
+              </div>
+            {{/Surface}}
           {{/if}}
         {{/View}}
         {{#View size=atSigninLinkSize}}

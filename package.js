@@ -22,7 +22,7 @@ Package.on_use(function(api, where) {
 
     api.imply([
         "splendido:accounts-templates-core@0.9.5",
-        "gadicohen:famous-views@0.1.7",
+        "gadicohen:famous-views@0.1.8",
         "aldeed:template-extension@2.0.0",
     ], ["client", "server"]);
 
