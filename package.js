@@ -26,10 +26,10 @@ Package.on_use(function(api, where) {
         "aldeed:template-extension@2.0.0",
     ], ["client", "server"]);
 
-    api.use("splendido:accounts-templates-unstyled", ["client", "server"], { weak: true });
-    api.use("splendido:accounts-templates-bootstrap", ["client", "server"], { weak: true });
-    api.use("splendido:accounts-templates-foundation", ["client", "server"], { weak: true });
-    api.use("splendido:accounts-templates-semantic-ui", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-unstyled@0.9.7", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-bootstrap@0.9.7", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-foundation@0.9.7", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-semantic-ui@0.9.7", ["client", "server"], { weak: true });
 
     api.add_files([
         "lib/at_famous_form.html",
