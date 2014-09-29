@@ -1,15 +1,17 @@
 [![Build Status](https://travis-ci.org/splendido/accounts-templates-famous.svg?branch=master)](https://travis-ci.org/splendido/accounts-templates-famous)
-accounts-templates-famous
-=========================
 
-Meteor sign up and sign in templates (and much more!) styled for Famo.us
+## WIP
 
-This package depends on [accounts-templates-core](https://atmospherejs.com/package/accounts-templates-core)
-
-Learn more [here](http://accounts-templates.meteor.com) or have a look at a [live demo application](http://accounts-templates-famous.meteor.com).
+this project is still work in progress, so you can have a look at it but please don't expect to find it in a usable state.
+Come back soon to appreciate improvements ;-)
 
 
-Attention!
-==========
+accounts-templates-famous-wrapper
+=================================
 
-Adding this package with `mrt add splendido:accounts-templates-famous` does not add any other packages providing Famo.us. This is to let you choose your preferred way to include Famo.us!
+Meteor sign up and sign in templates (and much more!) wrapper for Famo.us!
+
+
+## Warning!
+
+Adding this package with `mrt add splendido:accounts-templates-famous-wrapper` does not add any other packages providing Famo.us. This is to let you choose your preferred way to include Famo.us!
