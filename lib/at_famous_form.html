@@ -9,7 +9,7 @@
         {{/View}}
         {{#View size=atOauthSize}}
           {{#if showOauthServices}}
-            {{> atOauth}}
+            {{>SequentialLayout template="atOauth" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
         {{#View size=atSepSize}}
@@ -29,12 +29,7 @@
         {{/View}}
         {{#View size=atPwdFormSize}}
           {{#if showPwdForm}}
-            {{!-- {{>Surface template="atPwdForm" size="[undefined, true]"}} --}}
-            {{#Surface size="[undefined, true]"}}
-              <div>
-                {{> atPwdForm}}
-              </div>
-            {{/Surface}}
+            {{>Surface template="atPwdForm" size="[undefined, true]"}}
           {{/if}}
         {{/View}}
         {{#View size=atSigninLinkSize}}
