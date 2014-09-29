@@ -1,7 +1,7 @@
 Package.describe({
     summary: "Accounts Templates styled for Famo.us.",
-    version: "0.9.5",
-    name: "splendido:accounts-templates-famous",
+    version: "0.0.1",
+    name: "splendido:accounts-templates-famous-wrapper",
     git: "https://github.com/splendido/accounts-templates-famous.git",
 });
 
@@ -21,8 +21,8 @@ Package.on_use(function(api, where) {
     ], ["client", "server"]);
 
     api.imply([
-        "splendido:accounts-templates-core@0.9.5",
-        "gadicohen:famous-views@0.1.8",
+        "splendido:accounts-templates-core@0.9.7",
+        "gadicohen:famous-views@0.1.9",
         "aldeed:template-extension@2.0.0",
     ], ["client", "server"]);
 
@@ -44,7 +44,7 @@ Package.on_use(function(api, where) {
 
 Package.on_test(function(api) {
     api.use([
-        "splendido:accounts-templates-core@0.9.5",
+        "splendido:accounts-templates-core@0.9.7",
     ]);
     api.use(["tinytest", "test-helpers"], ["client", "server"]);
     api.add_files("tests/tests.js", ["client", "server"]);
