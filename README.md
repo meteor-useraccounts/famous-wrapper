@@ -11,6 +11,8 @@ accounts-templates-famous-wrapper
 
 Meteor sign up and sign in templates (and much more!) wrapper for Famo.us!
 
+Lets have a look at a [live demo application](http://accounts-templates-famous-wrapper.meteor.com)
+
 
 ## Warning!
 
