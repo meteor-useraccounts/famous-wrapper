@@ -1,52 +1,36 @@
 <template name="atFamousForm">
   {{#unless hide}}
     {{#ContainerSurface size="[undefined, undefined]" class="at-form"}}
-      {{#SequentialLayout size=formSize}}
-        {{#View size=atTitleSize}}
-          {{#if showTitle}}
-            {{>Surface template="atTitle" size="[undefined, true]"}}
-          {{/if}}
-        {{/View}}
-        {{#View size=atOauthSize}}
-          {{#if showOauthServices}}
-            {{>SequentialLayout template="atOauth" size="[undefined, true]"}}
-          {{/if}}
-        {{/View}}
-        {{#View size=atSepSize}}
-          {{#if showServicesSeparator}}
-            {{>Surface template="atSep" size="[undefined, true]"}}
-          {{/if}}
-        {{/View}}
-        {{#View size=atErrorSize}}
-          {{#if showError}}
-            {{>Surface template="atError" size="[undefined, true]"}}
-          {{/if}}
-        {{/View}}
-        {{#View size=atResultSize}}
-          {{#if showResult}}
-            {{>Surface template="atResult" size="[undefined, true]"}}
-          {{/if}}
-        {{/View}}
-        {{#View size=atPwdFormSize}}
-          {{#if showPwdForm}}
-            {{>Surface template="atPwdForm" size="[undefined, true]"}}
-          {{/if}}
-        {{/View}}
-        {{#View size=atSigninLinkSize}}
-          {{#if showSignInLink}}
-            {{>Surface template="atSigninLink" size="[undefined, true]"}}
-          {{/if}}
-        {{/View}}
-        {{#View size=atSignupLinkSize}}
-          {{#if showSignUpLink}}
-            {{>Surface template="atSignupLink" size="[undefined, true]"}}
-          {{/if}}
-        {{/View}}
-        {{#View size=atTermsLinkSize}}
-          {{#if showTermsLink}}
-            {{>Surface template="atTermsLink" size="[undefined, true]"}}
-          {{/if}}
-        {{/View}}
+      {{#SequentialLayout size="[undefined, auto]"}}
+        {{#famousIf showTitle}}
+          {{>Surface template="atTitle" size="[undefined, auto]"}}
+        {{/famousIf}}
+        {{#famousIf showOauthServices}}
+          {{#famousEach oauthService}}
+            {{>Surface template="atSocial" size="[undefined, auto]"}}
+          {{/famousEach}}
+        {{/famousIf}}
+        {{#famousIf showServicesSeparator}}
+          {{>Surface template="atSep" size="[undefined, auto]"}}
+        {{/famousIf}}
+        {{#famousIf showError}}
+          {{>Surface template="atError" size="[undefined, auto]"}}
+        {{/famousIf}}
+        {{#famousIf showResult}}
+          {{>Surface template="atResult" size="[undefined, auto]"}}
+        {{/famousIf}}
+        {{#famousIf showPwdForm}}
+          {{>Surface template="atPwdForm" size="[undefined, auto]"}}
+        {{/famousIf}}
+        {{#famousIf showSignInLink}}
+          {{>Surface template="atSigninLink" size="[undefined, auto]"}}
+        {{/famousIf}}
+        {{#famousIf showSignUpLink}}
+          {{>Surface template="atSignupLink" size="[undefined, auto]"}}
+        {{/famousIf}}
+        {{#famousIf showTermsLink}}
+          {{>Surface template="atTermsLink" size="[undefined, auto]"}}
+        {{/famousIf}}
       {{/SequentialLayout}}
     {{/ContainerSurface}}
   {{/unless}}
