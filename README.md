@@ -1,17 +1,11 @@
-[![Build Status](https://travis-ci.org/splendido/accounts-templates-famous.svg?branch=master)](https://travis-ci.org/splendido/accounts-templates-famous)
-
-## WIP
-
-this project is still work in progress, so you can have a look at it but please don't expect to find it in a usable state.
-Come back soon to appreciate improvements ;-)
-
-
 accounts-templates-famous-wrapper
 =================================
 
-Meteor sign up and sign in templates (and much more!) wrapper for Famo.us!
+A very smart [Famo.us](http://famo.us) wrapper which uses [famous-views](https://atmospherejs.com/gadicohen/famous-views) to wrap up any version of AccountsTemplates to give you animated sign up and sign in templates straight away!
 
-Lets have a look at a [live demo application](http://accounts-templates-famous-wrapper.meteor.com)
+You can lear how to use it reading [Wrapping Up for Famo.us](https://github.com/splendido/accounts-templates-core#wrapping-up-for-famo.us) chapter inside the official [documentation](https://github.com/splendido/accounts-templates-core).
+
+Lets have a look at a [live demo application](http://accounts-templates-famous-wrapper.meteor.com)!
 
 
 ## Warning!

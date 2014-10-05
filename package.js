@@ -1,5 +1,5 @@
 Package.describe({
-    summary: "Accounts Templates styled for Famo.us.",
+    summary: "Famo.us wrapper for Accounts Templates.",
     version: "0.0.4",
     name: "splendido:accounts-templates-famous-wrapper",
     git: "https://github.com/splendido/accounts-templates-famous.git",
@@ -14,39 +14,46 @@ Package.on_use(function(api, where) {
     ], "client");
 
     api.use([
+        "check",
         "underscore",
         "splendido:accounts-templates-core",
-        "gadicohen:famous-views@0.1.11",
+        "gadicohen:famous-views",
         "aldeed:template-extension"
     ], ["client", "server"]);
 
     api.imply([
-        "splendido:accounts-templates-core@0.9.8",
-        "gadicohen:famous-views@0.1.11",
+        "splendido:accounts-templates-core@0.9.9",
+        "gadicohen:famous-views@0.1.12",
         "aldeed:template-extension@2.0.0",
     ], ["client", "server"]);
 
     //api.use('mjnetworks:famous@0.2.2-1', ['client']/*, { weak: true }*/);
 
-    api.use("splendido:accounts-templates-unstyled@0.9.8", ["client", "server"], { weak: true });
-    api.use("splendido:accounts-templates-bootstrap@0.9.8", ["client", "server"], { weak: true });
-    api.use("splendido:accounts-templates-foundation@0.9.8", ["client", "server"], { weak: true });
-    api.use("splendido:accounts-templates-semantic-ui@0.9.8", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-unstyled@0.9.9", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-bootstrap@0.9.9", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-foundation@0.9.9", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-semantic-ui@0.9.9", ["client", "server"], { weak: true });
 
     api.add_files([
-        "lib/init.js",
         "lib/at_famous_form.html",
         "lib/at_famous_form.js",
         "lib/at_famous_oauth.html",
         "lib/at_famous_oauth.js",
+        "lib/at_pwd_form_btn.js",
         "lib/full_page_at_famous_form.html",
         "lib/full_page_at_famous_form.js",
+        "lib/default_animations.js",
+        "lib/famous_wrapper.js",
     ], ["client"]);
+
+    api.add_files([
+        "lib/at_configure_anim.js",
+    ], ["client", "server"]);
 });
 
 Package.on_test(function(api) {
     api.use([
-        "splendido:accounts-templates-core@0.9.8",
+        "splendido:accounts-templates-core@0.9.9",
     ]);
     api.use(["tinytest", "test-helpers"], ["client", "server"]);
     api.add_files("tests/tests.js", ["client", "server"]);
