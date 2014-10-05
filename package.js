@@ -16,15 +16,17 @@ Package.on_use(function(api, where) {
     api.use([
         "underscore",
         "splendido:accounts-templates-core",
-        "gadicohen:famous-views",
+        "gadicohen:famous-views@0.1.11",
         "aldeed:template-extension"
     ], ["client", "server"]);
 
     api.imply([
         "splendido:accounts-templates-core@0.9.8",
-        "gadicohen:famous-views",
+        "gadicohen:famous-views@0.1.11",
         "aldeed:template-extension@2.0.0",
     ], ["client", "server"]);
+
+    //api.use('mjnetworks:famous@0.2.2-1', ['client']/*, { weak: true }*/);
 
     api.use("splendido:accounts-templates-unstyled@0.9.8", ["client", "server"], { weak: true });
     api.use("splendido:accounts-templates-bootstrap@0.9.8", ["client", "server"], { weak: true });

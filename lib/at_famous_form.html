@@ -6,9 +6,7 @@
           {{>Surface template="atTitle" size="[undefined, auto]"}}
         {{/famousIf}}
         {{#famousIf showOauthServices}}
-          {{#famousEach oauthService}}
-            {{>Surface template="atSocial" size="[undefined, auto]"}}
-          {{/famousEach}}
+          {{> atOauth}}
         {{/famousIf}}
         {{#famousIf showServicesSeparator}}
           {{>Surface template="atSep" size="[undefined, auto]"}}

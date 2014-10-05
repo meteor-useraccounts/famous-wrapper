@@ -1,5 +1,7 @@
 <template name="atFamousOauth">
-  {{#famousEach oauthService}}
-    {{>Surface template="atSocial" size="[undefined, auto]"}}
-  {{/famousEach}}
+  {{!-- {{#SequentialLayout size="[undefined, true]" class="at-oauth" oauthService=oauthService}} --}}
+    {{#famousEach oauthService}}
+      {{>Surface template="atSocial" size="[undefined, auto]"}}
+    {{/famousEach}}
+  {{!-- {{/SequentialLayout}} --}}
 </template>
