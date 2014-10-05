@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Famo.us wrapper for Accounts Templates.",
-    version: "0.1.0",
+    version: "0.1.1",
     name: "splendido:accounts-templates-famous-wrapper",
     git: "https://github.com/splendido/accounts-templates-famous.git",
 });
