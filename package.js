@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Famo.us wrapper for Accounts Templates.",
-    version: "0.1.9",
+    version: "0.1.10",
     name: "splendido:accounts-templates-famous-wrapper",
     git: "https://github.com/splendido/accounts-templates-famous.git",
 });
@@ -23,7 +23,7 @@ Package.on_use(function(api, where) {
 
     api.imply([
         "splendido:accounts-templates-core@0.9.16",
-        "gadicohen:famous-views@0.1.14",
+        "gadicohen:famous-views@0.1.16",
         "aldeed:template-extension@2.0.0",
     ], ["client", "server"]);
 
