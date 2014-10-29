@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Famo.us wrapper for Accounts Templates.",
-    version: "0.1.11",
+    version: "0.1.12",
     name: "splendido:accounts-templates-famous-wrapper",
     git: "https://github.com/splendido/accounts-templates-famous.git",
 });
@@ -22,17 +22,17 @@ Package.on_use(function(api, where) {
     ], ["client", "server"]);
 
     api.imply([
-        "splendido:accounts-templates-core@0.10.0",
-        "gadicohen:famous-views@0.1.17",
+        "splendido:accounts-templates-core@0.11.0",
+        "gadicohen:famous-views@0.1.18",
         "aldeed:template-extension@2.0.0",
     ], ["client", "server"]);
 
     //api.use('mjnetworks:famous@0.2.2-1', ['client']/*, { weak: true }*/);
 
-    api.use("splendido:accounts-templates-unstyled@0.10.0", ["client", "server"], { weak: true });
-    api.use("splendido:accounts-templates-bootstrap@0.10.0", ["client", "server"], { weak: true });
-    api.use("splendido:accounts-templates-foundation@0.10.0", ["client", "server"], { weak: true });
-    api.use("splendido:accounts-templates-semantic-ui@0.10.0", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-unstyled@0.11.0", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-bootstrap@0.11.0", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-foundation@0.11.0", ["client", "server"], { weak: true });
+    api.use("splendido:accounts-templates-semantic-ui@0.11.0", ["client", "server"], { weak: true });
 
     api.add_files([
         "lib/at_famous_form.html",
@@ -53,7 +53,7 @@ Package.on_use(function(api, where) {
 
 Package.on_test(function(api) {
     api.use([
-        "splendido:accounts-templates-core@0.10.0",
+        "splendido:accounts-templates-core@0.11.0",
     ]);
     api.use(["tinytest", "test-helpers"], ["client", "server"]);
     api.add_files("tests/tests.js", ["client", "server"]);
