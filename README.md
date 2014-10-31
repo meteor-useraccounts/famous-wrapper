@@ -8,6 +8,6 @@ You can lear how to use it reading [Wrapping Up for Famo.us](https://github.com/
 Lets have a look at a [live demo application](http://accounts-templates-famous-wrapper.meteor.com)!
 
 
-## ## Bring Your Own Famo.us
+## Bring Your Own Famo.us
 
 Adding this package with `mrt add splendido:accounts-templates-famous-wrapper` does not add any other packages providing Famo.us. This is to let you choose your preferred way to include Famo.us!
