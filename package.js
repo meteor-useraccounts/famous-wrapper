@@ -23,8 +23,8 @@ Package.on_use(function(api, where) {
 
     api.imply([
         "useraccounts:core@1.1.1",
-        "gadicohen:famous-views@0.1.18",
-        "aldeed:template-extension@2.0.0",
+        "gadicohen:famous-views@0.1.22",
+        "aldeed:template-extension@3.1.1",
     ], ["client", "server"]);
 
     //api.use('mjnetworks:famous@0.2.2-1', ['client']/*, { weak: true }*/);

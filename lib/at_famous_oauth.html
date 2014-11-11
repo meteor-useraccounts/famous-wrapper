@@ -1,5 +1,7 @@
 <template name="atFamousOauth">
   {{#famousEach oauthService}}
-    {{>Surface template="atSocial" size="[undefined, auto]"}}
+    {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+        {{> atSocial}}
+    {{/Surface}}
   {{/famousEach}}
 </template>

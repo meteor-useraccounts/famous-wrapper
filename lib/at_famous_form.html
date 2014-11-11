@@ -3,31 +3,47 @@
     {{#ContainerSurface size="[undefined, undefined]" class="at-form"}}
       {{#SequentialLayout size="[undefined, auto]"}}
         {{#famousIf showTitle}}
-          {{>Surface template="atTitle" size="[undefined, auto]"}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atTitle}}
+          {{/Surface}}
         {{/famousIf}}
         {{#famousIf showOauthServices}}
           {{> atOauth}}
         {{/famousIf}}
         {{#famousIf showServicesSeparator}}
-          {{>Surface template="atSep" size="[undefined, auto]"}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atSep}}
+          {{/Surface}}
         {{/famousIf}}
         {{#famousIf showError}}
-          {{>Surface template="atError" size="[undefined, auto]"}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atError}}
+          {{/Surface}}
         {{/famousIf}}
         {{#famousIf showResult}}
-          {{>Surface template="atResult" size="[undefined, auto]"}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atResult}}
+          {{/Surface}}
         {{/famousIf}}
         {{#famousIf showPwdForm}}
-          {{>Surface template="atPwdForm" size="[undefined, auto]"}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atPwdForm}}
+          {{/Surface}}
         {{/famousIf}}
         {{#famousIf showSignInLink}}
-          {{>Surface template="atSigninLink" size="[undefined, auto]"}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atSigninLink}}
+          {{/Surface}}
         {{/famousIf}}
         {{#famousIf showSignUpLink}}
-          {{>Surface template="atSignupLink" size="[undefined, auto]"}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atSignupLink}}
+          {{/Surface}}
         {{/famousIf}}
         {{#famousIf showTermsLink}}
-          {{>Surface template="atTermsLink" size="[undefined, auto]"}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atTermsLink}}
+          {{/Surface}}
         {{/famousIf}}
       {{/SequentialLayout}}
     {{/ContainerSurface}}
