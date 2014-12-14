@@ -29,10 +29,12 @@ Package.on_use(function(api, where) {
 
     //api.use('mjnetworks:famous@0.2.2-1', ['client']/*, { weak: true }*/);
 
-    api.use("useraccounts:unstyled@1.3.2", ["client", "server"], { weak: true });
     api.use("useraccounts:bootstrap@1.3.2", ["client", "server"], { weak: true });
     api.use("useraccounts:foundation@1.3.2", ["client", "server"], { weak: true });
+    api.use("useraccounts:ionic@1.3.2", ["client", "server"], { weak: true });
+    api.use("useraccounts:ratchet@1.3.2", ["client", "server"], { weak: true });
     api.use("useraccounts:semantic-ui@1.3.2", ["client", "server"], { weak: true });
+    api.use("useraccounts:unstyled@1.3.2", ["client", "server"], { weak: true });
 
     api.add_files([
         "lib/at_famous_form.html",
