@@ -1,9 +1,9 @@
 <template name="atFamousForm">
   {{#unless hide}}
-    {{#ContainerSurface size="[undefined, undefined]" class="at-form"}}
-      {{#SequentialLayout size="[undefined, auto]"}}
+    {{#ContainerSurface class="at-form"}}
+      {{#SequentialLayout}}
         {{#famousIf showTitle}}
-          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atTitle}}
           {{/Surface}}
         {{/famousIf}}
@@ -11,37 +11,37 @@
           {{> atOauth}}
         {{/famousIf}}
         {{#famousIf showServicesSeparator}}
-          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atSep}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showError}}
-          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atError}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showResult}}
-          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atResult}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showPwdForm}}
-          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]" watchSize=true}}
             {{> atPwdForm}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showSignInLink}}
-          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atSigninLink}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showSignUpLink}}
-          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atSignupLink}}
           {{/Surface}}
         {{/famousIf}}
         {{#famousIf showTermsLink}}
-          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+          {{#Surface size="[undefined, true]"}}
             {{> atTermsLink}}
           {{/Surface}}
         {{/famousIf}}
