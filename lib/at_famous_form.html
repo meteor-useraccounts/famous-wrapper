@@ -50,6 +50,11 @@
             {{> atTermsLink}}
           {{/Surface}}
         {{/famousIf}}
+        {{#famousIf showResendVerificationEmailLink}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atResendVerificationEmailLink}}
+          {{/Surface}}
+        {{/famousIf}}
       {{/SequentialLayout}}
     {{/ContainerSurface}}
   {{/unless}}
