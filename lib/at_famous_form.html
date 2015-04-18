@@ -25,6 +25,11 @@
             {{> atResult}}
           {{/Surface}}
         {{/famousIf}}
+        {{#famousIf showMessage}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atMessage}}
+          {{/Surface}}
+        {{/famousIf}}
         {{#famousIf showPwdForm}}
           {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
             {{> atPwdForm}}
@@ -43,6 +48,11 @@
         {{#famousIf showTermsLink}}
           {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
             {{> atTermsLink}}
+          {{/Surface}}
+        {{/famousIf}}
+        {{#famousIf showResendVerificationEmailLink}}
+          {{#Surface size="[undefined, auto]" modifier="StateModifier"}}
+            {{> atResendVerificationEmailLink}}
           {{/Surface}}
         {{/famousIf}}
       {{/SequentialLayout}}
