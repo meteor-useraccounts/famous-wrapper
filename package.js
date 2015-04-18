@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Famo.us wrapper for Accounts Templates.",
-    version: "1.9.0",
+    version: "1.8.1",
     name: "useraccounts:famous-wrapper",
     git: "https://github.com/meteor-useraccounts/famous-wrapper.git",
 });
