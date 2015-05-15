@@ -3,7 +3,7 @@ useraccounts:famous-wrapper
 
 A very smart [Famo.us](http://famo.us) wrapper which uses [famous-views](https://atmospherejs.com/gadicohen/famous-views) to wrap up any version of AccountsTemplates to give you animated sign up and sign in templates straight away!
 
-You can lear how to use it reading [Wrapping Up for Famo.us](https://github.com/meteor-useraccounts/core#wrapping-up-for-famo.us) chapter inside the official [documentation](https://github.com/meteor-useraccounts/core) for AccountsTemplates.
+You can lear how to use it reading [Wrapping Up for Famo.us](https://github.com/meteor-useraccounts/core/blob/master/Guide.md#wrapping-up-for-famo.us) chapter inside the official [Guide](https://github.com/meteor-useraccounts/core/blob/master/Guide.md) for AccountsTemplates.
 
 Lets have a look at a [live demo application](http://accounts-templates-famous-wrapper.meteor.com)!
 
